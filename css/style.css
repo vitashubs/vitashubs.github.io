@@ -272,12 +272,12 @@ div.day {
 }
 
 .fade-left {
-    background: linear-gradient(to right, rgba(251,251,251,1) 0%, rgba(251,251,251, 0) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255, 0) 100%);
     margin-right: -60px;
 }
 
 .fade-right {
-    background: linear-gradient(to left, rgba(251,251,251,1) 0%, rgba(251,251,251, 0) 100%);
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255, 0) 100%);
     margin-left: -60px;
 }
 
