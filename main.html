@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+    <title>Vita&Mason</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <!-- add icon link -->
+      <link style="border-radius: 50%;" rel="icon" href=
+      "images/icon.png"
+              type="image/x-icon" />
+  </head>
+<body>
+    <div class="hamburger-menu" style="color: white;">
+        <button id="hamburger-btn" class="hamburger-btn" style="color: black;"><p style="margin: 0; padding: 0;">☰ MENU</p></button>
+    </div>
+    <nav id="side-menu" class="side-menu">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <ul id="selectionClose">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#date">Date</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#tidbits">Tidbits</a></li>
+            <li><a href="#info">Accomodations + Transport</a></li>
+            <li><a href="#registry">Registry</a></li>
+            <li><a href="#QA">FAQ</a></li>
+            <li style="margin-top: 10px;"><a href="#" id="ParamURLMenu"><button type="button" class="btn btn-outline-light">RVSP</button></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="cover" id="main">
+      <div class="overlay" id="overlay">
+        <div class="center">
+              <h1 class="title" style="font-size: 50px;">Vita & Mason</h1>
+              <p class="cormorant-text">We can't wait to share this special day with you!</p>
+              <a href="#" id="ParamURLCover"><button type="button" class="btn btn-outline-light">RVSP</button></a>
+        </div>
+      </div>  
+       <!-- <img src="images/proposal_lisbon.jpg" alt="lisbon">  -->
+    </div>
+    <div class="row date" id="date" style="margin-top: 20px;">
+        <div class="col-md-4" style="z-index: 1;">
+            <h3 class="cormorant-middle">Thursday, July 10, 2025</h3>
+            <h3 class="cormorant-middle">San Diego, CA, USA</h3>
+            <h3 class="cormorant-middle" id="countdown">00:00:00</h3>
+        </div>
+        <!-- <div class="col-md-4">
+            <img src="images/save-the-date.jpg" alt="Save the date" style="z-index: -2;">
+        </div> -->
+    </div>
+
+    <div class="row schedule-arrows">
+      <div class="col-md-1  arrow-left">
+        <p><i class="arrow left"></i></p>
+      </div>
+      <div class="faded fade-left">
+      </div>
+      <div class="col-md-10">
+        <div class="row schedule flex-nowrap" id="schedule">
+          <div class="event col-md-10">
+              <div class="row first-schedule-event">
+                  <!-- Image Section -->
+                  <div class="col-md-4">
+                      <img src="images/save-the-date.jpg" alt="Event Image">
+                  </div>
+                  <!-- Text Section -->
+                  <div class="col-md-8">
+                      <h4>Ceremony & Reception 👰💍🤵</h4>
+                      <p class="text-muted">Thursday July 10, 2025 @ 4:00 PM</p>
+                      <p>We're getting married! Dinner, drinks, and dancing to follow!</p>
+                      <p>Dress Code: TBD</p>
+                      <p><a href="https://www.google.com/maps/search/?api=1&query=Monserate+Winery%2C+Gird+Road%2C+Fallbrook%2C+CA%2C+USA" target="_blank">Monserate Winery, Gird Road, Fallbrook, CA, USA</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="event col-md-10">
+              <div class="row">
+                  <!-- Image Section -->
+                  <div class="col-md-4">
+                      <img src="images/after-party.jpg" alt="Event Image">
+                  </div>
+                  <!-- Text Section -->
+                  <div class="col-md-8">
+                      <h4>After Party (DiMarcos After Dark) 💃🪩🎵
+                      </h4>
+                      <p class="text-muted">Thursday July 10, 2025 @ 10:00 PM</p>
+                      <p>For those who are interested, join us after the ceremony at our after party.
+  
+                          Transport from ceremony to after party will be provided (please RSVP accordingly)</p>
+                      <p>Location: TBD</p>
+                  </div>
+              </div>
+          </div>
+          <div class="event col-md-10">
+              <div class="row">
+                  <!-- Image Section -->
+                  <div class="col-md-4">
+                      <img src="images//shuttle.jpg" alt="Event Image">
+                  </div>
+                  <!-- Text Section -->
+                  <div class="col-md-8">
+                      <h4>Post-Wedding Beach Day 🏖️🌊
+  
+                      </h4>
+                      <p class="text-muted">Friday July 11, 2025 @ 10:00 AM to 3:00 PM</p>
+                      <p>For all those of you who are staying a day longer, we are going to setup a beach day. Drinks and food will be available. Stay tuned for more info</p>
+                      <p>Dress Code: Beach-wear! Make sure to check the weather, beach-side can be either super hot or a bit chilly depending on the day!</p>
+                      <p>Location: TBD</p>
+                  </div>
+              </div>
+          </div>
+          <div class="event col-md-10" id="rehearsalSchedule">
+            <div class="row">
+                <!-- Image Section -->
+                <div class="col-md-4">
+                    <img src="images/rehearsal.jpg" alt="Event Image" style="object-position: bottom;">
+                </div>
+                <!-- Text Section -->
+                <div class="col-md-8">
+                    <h4>Rehearsal Dinner
+  
+                    </h4>
+                    <p class="text-muted">TBD</p>
+                    <p>Join us for an intimate rehearsal dinner before our wedding day! Please note this is by invite only.</p>
+                    <p>Dress Code: TBD</p>
+                    <p>Location: TBD</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="faded fade-right">
+    </div>
+    <div class="col-md-1 arrow-right">
+      <p><i class="arrow right"></i></p>
+    </div>
+    </div>
+    <div class="row story" style="margin: auto;" id="story">
+      <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-6 image">
+            <div class="full-screen-image">
+                <img src="images/story.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-6 text">
+            <h4>The Story of Us</h4>
+            <p>In 2017, Mason visited the Tel Aviv Google office. While he was there, he sent an office-wide email asking for if anyone had any suggestions for visitors. He was overwhelmed with responses and had to turn people down from hanging out!
+
+                Fast forward one year later, Mason was planning on spending the summer in Seattle, so he decided to chase after repeat-success and emailed the Seattle office looking for suggestions. He received exactly one (1) response from the only Israeli in the office: Vita. <br> <br>
+                
+                This led to Vita and Mason meeting for coffee in the office. Vita and Mason had, unbeknownst to each other, both signed up to work for the same programming summer camp (CSSI). Vita was a TA for the students, while Mason was their RA, and Vita shared her list of recommendations for Seattle with Mason (he didn't visit any).
+                
+                They found out both had plans to be in Europe later that year during the same week, and decided they would convince their friends to meet in the middle and merge friend group trips. All the friends bailed, but Mason and Vita's first time hanging out 1:1 was in Portugal! And the rest is history...</p>
+        </div>
+        <!-- <div class="col-md-1"></div> -->
+    </div>
+    <div class="row tidbits" id="tidbits">
+      <h4>Tidbits</h4>
+      <div class="height"></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5" style="align-self: center;">
+            <h4>Who made the first move? How?</h4>
+  <p>As soon as Mason left Portugal, he messaged Vita that he found (and booked) some flights to come visit her in Seattle. That was the beginning of monthly flights for both Vita and Mason between SF and Seattle!</p>
+
+  <h4>How did you start dating?</h4>
+  <p>Vita visited Mason in San Francisco. One of Mason's friends, Max E (hi Max!) met Vita and said "oh so you're Mason's girlfriend I presume?" to which Vita answered "no" but Mason answered "yes".</p>
+
+        </div>
+        <div class="col-lg-5 image">
+          <img src="images/tidbits-1.jpg" alt="">
+        </div>
+        <div class="col-lg-1"></div>
+
+    </div>
+    <div class="row tidbits" id="tidbits">
+      <div class="col-lg-1 order-lg-1"></div>
+      <div class="col-lg-6 order-lg-3">
+<h4>Did Vita really not know Mason was proposing in Portugal?</h4>
+<p>Mason had a really elaborate plan that involved himself, Vita's entire family, and most of her friends lying to her for several months. Vita thought Mason would propose in Portugal, so he immediately contacted everyone and told them to pretend as if they were doing a bad job of keeping the proposal secret, and that the fake proposal would be over THANKSGIVING.</p>
+
+<p>The day of the proposal, the scheduled plans changed so often Vita thought there was no way Mason could be proposing given all the changes. He didn't even have tickets to the park where the proposal would happen until an hour before!</p>
+      </div>
+      <div class="col-lg-4 image order-lg-2">
+        <img src="images/palm-VM.jpg" alt="" style="object-position: bottom;">
+      </div>
+      <div class="col-lg-1 order-lg-4"></div>
+
+  </div>
+
+  <div class="info-background" id="info">
+    <div class="row info" id="info-title">
+      <h4 style="margin-top: 10px;">Accomodations + Transport
+      </h4>
+    </div>
+    <div class="row info" id="hotels">
+      <div class="col-md-1"></div>
+      <div class="col-md-8 ">
+        <h4>Hotels 🛌</h4>
+        <p>You’ll notice our chosen hotel block is a little distance away from the venue- this is on purpose! 
+          We recommend staying with our block or at the nearby recommended locations! We will have shuttles going from the recommended hotel to the venue and back (please indicate if you’d like a seat on these shuttles in your rsvp), or you are always welcome to drive yourself or call an Uber though expect moderate prices for the distance (we recommend carpooling!)
+          There are hotels near the venue itself, and you are welcome to stay there as well, though all other wedding activities and most tourist locations are NOT near the venue and are instead near our recommended hotels. Thank you!</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    
+    <div class="row info" style="margin-top: 10px;">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <h4>Getting In ✈️</h4>
+        <p>We recommend flying into San Diego International Airport (SAN).
+  
+          You can also fly into John Wayne Airport or LAX (Los Angeles Airport), but these will be a much longer drive, especially with traffic, so we highly recommend SAN :)</p>
+      </div>
+      <div class="col-md-4" id="uber">
+        <h4>Uber/Lyft</h4>
+        <p>Ubers and Lyfts are the easiest way to get around San Diego, and there are plenty around!
+  
+          For those who prefer, you can also rent a car from SAN airport</p>
+      </div>
+      <div class="col-md-2"></div>
+  
+    </div>
+  </div>
+
+  <div class="row info" id="registry" style="margin-top: 10px;">
+    
+    <div class="col-md-1"></div>
+    <div class="col-md-8 ">
+      <h4>Registry 🎁</h4>
+      <p>Your presence is enough of a present to us! But for those of you who are stubborn, we've put together a wish-list to help you out.
+      </p>
+      <a href="javascript:void(0)"><p>Wish List</p></a>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+    <div class="row QA" id="QA">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <h4 id="faq-title">Frequently Asked Questions</h4>
+          
+          <!-- First Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                When is the RSVP deadline?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Please RSVP by April 15th. If you have not RSVPed by this date, we will consider that as RSVP'ing no :)</div>
+            </div>
+          </div>
+          
+          <!-- Second Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Can I bring a date?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Please check your invite for your +1! Your envelope will be addressed to the invited guests.</div>
+            </div>
+          </div>
+          
+          <!-- Third Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Are kids welcome?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Please ask us if you want to bring any child under 10 years old!</div>
+            </div>
+          </div>
+      
+          <!-- Fourth Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Is there transportation being provided between reception and hotels?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">YES!! Transportation will be provided from the hotel area to the ceremony and back at the end of the night!</div>
+            </div>
+          </div>
+      
+          <!-- Fifth Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Where should I park?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The venue has free parking if you are driving yourself.</div>
+            </div>
+          </div>
+      
+          <!-- Sixth Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Can I call a Lyft/Uber for transportation?
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">While the hotel area will have plenty of Lyfts and Ubers, the ceremony area might require a longer wait for Lyft & Uber.</div>
+            </div>
+          </div>
+      
+          <!-- Seventh Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                What will the weather be like?
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The ceremony will be warm during the day, and much cooler at night, please bring layers and sunscreen!</div>
+            </div>
+          </div>
+      
+          <!-- Eighth Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                What should I wear?
+              </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Please see our Schedule for the dress code.</div>
+            </div>
+          </div>
+      
+          <!-- Ninth Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                Is the wedding indoors or outdoors?
+              </button>
+            </h2>
+            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Our wedding ceremony is outdoors, but our reception will be indoors.</div>
+            </div>
+          </div>
+      
+          <!-- Tenth Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                What kind of shoes should/shouldn't I wear?
+              </button>
+            </h2>
+            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The ceremony will be on a grass lawn, so take that into account with your shoes :)</div>
+            </div>
+          </div>
+      
+          <!-- Eleventh Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEleven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                Is it okay to take pictures with our phones and cameras during the wedding?
+              </button>
+            </h2>
+            <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Yes! We would love for you to take photos and share them with us. However, please refrain from taking photos during the ceremony.</div>
+            </div>
+          </div>
+        </div>
+    </div>     
+    <div class="footer">
+      <a href="#" id="ParamURLFooter"><button type="button" class="btn btn-outline-light">Made it this far? Don't forget to RVSP!</button></a>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="script/countdown.js"></script>
+<script src="script/script.js"></script>
+<script src="script/schedule.js"></script>
+</html>
