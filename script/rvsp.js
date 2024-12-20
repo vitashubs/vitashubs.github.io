@@ -110,14 +110,14 @@ document.getElementById('customForm').addEventListener('submit', function(event)
 //   }
 // };
 
-document.getElementById("mainLink").href = "index.html?code=" + code +"#main";
-document.getElementById("dateLink").href = "index.html?code=" + code +"#date";
-document.getElementById("scheduleLink").href = "index.html?code=" + code +"#schedule";
-document.getElementById("storyLink").href = "index.html?code=" + code +"#story";
-document.getElementById("tidbitsLink").href = "index.html?code=" + code +"#tidbits";
-document.getElementById("infoLink").href = "index.html?code=" + code +"#info";
-document.getElementById("registryLink").href = "index.html?code=" + code +"#registry";
-document.getElementById("qaLink").href = "index.html?code=" + code +"#QA";
+document.getElementById("mainLink").href = "main.html?code=" + code +"#main";
+document.getElementById("dateLink").href = "main.html?code=" + code +"#date";
+document.getElementById("scheduleLink").href = "main.html?code=" + code +"#schedule";
+document.getElementById("storyLink").href = "main.html?code=" + code +"#story";
+document.getElementById("tidbitsLink").href = "main.html?code=" + code +"#tidbits";
+document.getElementById("infoLink").href = "main.html?code=" + code +"#info";
+document.getElementById("registryLink").href = "main.html?code=" + code +"#registry";
+document.getElementById("qaLink").href = "main.html?code=" + code +"#QA";
 
 
 function setValueRF(value) {
