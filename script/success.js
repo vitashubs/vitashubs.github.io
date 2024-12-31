@@ -1,11 +1,14 @@
 code = (document.URL.split('?'))
-url = document.getElementById("returnURL");
+returnUrl = document.getElementById("returnURL");
+formUrl = document.getElementById("formURL");
 
 if (code == document.URL) {
-    url.href = "main.html";
+    returnUrl.href = "main.html";
+    formUrl.href = "rsvp.html";
 }
 
 else {
     code = code[1].split("=")[1].split("#")[0];
-    url.href = "main.html?code="+code;
+    returnUrl.href = "main.html?code="+code;
+    formUrl.href = "rsvp.html?code="+code;
 }

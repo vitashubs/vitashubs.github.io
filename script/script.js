@@ -46,30 +46,25 @@ rehearsalSchedule = document.getElementById("rehearsalSchedule");
 
 
 if (code == document.URL) {
-    urlMenu.href = "rvsp.html?code="+"vitamason";
-    urlCover.href = "rvsp.html?code="+"vitamason";
-    urlFooter.href = "rvsp.html?code="+"vitamason";
+    urlMenu.href = "rsvp.html?code="+"vitamason";
+    urlCover.href = "rsvp.html?code="+"vitamason";
+    urlFooter.href = "rsvp.html?code="+"vitamason";
     rehearsalSchedule.style.display = "none";
 }
 
 else {
     code = code[1].split("=")[1].split("#")[0];
 
-    urlMenu.href = "rvsp.html?code="+code;
+    urlMenu.href = "rsvp.html?code="+code;
 
-    urlCover.href = "rvsp.html?code="+code;
+    urlCover.href = "rsvp.html?code="+code;
 
-    urlFooter.href = "rvsp.html?code="+code;
+    urlFooter.href = "rsvp.html?code="+code;
 
     if (code != "vitamason-rd" && code != "vitamason-rdg") {
         rehearsalSchedule.style.display = "none";
     }
 }
-
-// for (let url in urls) {
-//     console.log(urls)
-//     url[0].href = "rvsp.html?code=1";
-// }
 
 window.addEventListener('load', (event) => {
     const overlay = document.getElementById("overlay");
@@ -80,21 +75,3 @@ window.addEventListener('load', (event) => {
         overlay.style.width = window.innerWidth + "px";
     }
 });
-
-// window.addEventListener('resize', (event) => {
-//     const overlay = document.getElementById("overlay");
-//     console.log(window.innerWidth);
-//     // iFrame.contentWindow.document.body.style.margin = "0 0 0 0";
-//     // const windowHeight =  window.innerHeight;
-
-//     // // const iframeHeight = iFrame.contentWindow.document.body.scrollHeight + 'px';
-//     // overlay.style.height = windowHeight + "px";
-//     if (window.innerWidth < 750) {
-//         const windowHeight =  window.innerHeight;
-
-//         // const iframeHeight = iFrame.contentWindow.document.body.scrollHeight + 'px';
-//         overlay.style.height = windowHeight + "px";
-//         // document.getElementsByClassName("mainContainer")[0].style.height = iframeHeight;
-//         console.log(windowHeight);
-//     }
-// });

@@ -491,9 +491,9 @@ div.day {
     margin: 0px;
 }
 
-/* RVSP */
+/* rsvp */
 
-.rvsp {
+.rsvp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,7 +503,7 @@ div.day {
     margin: 20px;
 }
 
-.rvsp .row {
+.rsvp .row {
     width: 100%;
     margin: 10px 0px;
 }
@@ -608,7 +608,7 @@ form button:hover {
     padding-right: 0px;
 }
 
-.rvsp .submit-button {
+.rsvp .submit-button {
     width: 100%;
     height: 40px;
     color: white;
@@ -644,9 +644,6 @@ form button:hover {
 .thanks {
     color: black;
     margin: auto;
-}
-
-.thanks {
     flex-direction: column; /* Stack children vertically */
     display: flex;
     justify-content: center;
@@ -656,21 +653,41 @@ form button:hover {
     width: 60%;
 }
 
+.thanks a {
+    text-decoration: none;
+}
+
 .thank div {
     width: 100%;
 }
 
-.thanks a button {
-    color: #b77e1c;
-    border-color: #b77e1c;
-    background-color: #e4b35d;
-    transition: 0.3s;
+.success-btn-row {
+    display: flex; 
+    justify-content: center;
 }
 
-.thanks a button:hover {
+.success-btn {
+    transition: 0.3s;
+    margin: 10px 0px;
+    width: 275px;
+}
+
+#formBtn {
+    background-color: white;
+    color: #b77e16; 
+    border-color: #b77e16;
+}
+
+#returnBtn {
     color: #865b11;
     border-color: #865b11;
     background-color: #e4b35d;
+}
+
+#formBtn:hover, #returnBtn:hover {
+    color: #614106;
+    background-color: #b77e16;
+    border-color: #614106;
 }
 
 #loadingScreen {
@@ -700,14 +717,14 @@ form button:hover {
   }
 
 
-.rvspTitle {
+.rsvpTitle {
     /* width: 80%; */
     margin: auto;
     border-bottom: #e4b35d 1px solid;
     margin-bottom: 20px;
 }
 
-.rvspTitle p {
+.rsvpTitle p {
     width: 80%;
     margin: auto;
     padding: 10px;
@@ -871,7 +888,7 @@ form button:hover {
         min-height: 50lvh;
     }
 
-    .rvsp {
+    .rsvp {
         padding: 20px;
     }
     

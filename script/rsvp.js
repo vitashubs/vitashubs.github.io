@@ -37,7 +37,7 @@ sideMenu.addEventListener('click', (e) => {
 const codeForm = document.getElementById("codeForm");
 const rehearsal= document.getElementById("rehearsal");
 const rehearsalField = document.getElementById("rehearsalField");
-const rvspForm = document.getElementById("rvsp")
+const rsvpForm = document.getElementById("rsvp")
 const warning = document.getElementById("warning");
 const guest = document.getElementById("guest")
 
@@ -65,7 +65,7 @@ document.getElementById('customForm').addEventListener('submit', function(event)
   
   // Show loading screen
   document.getElementById('loadingScreen').style.display = 'block';
-  rvspForm.style.display = "none";
+  rsvpForm.style.display = "none";
 
   // Create a new FormData object from the form
   var formData = new FormData(this);
@@ -95,20 +95,6 @@ document.getElementById('customForm').addEventListener('submit', function(event)
       alert('There was an error submitting the form. Please try again.');
   });
 });
-
-// document.getElementById('codeButton').onclick = function() {
-//   if (code.value == 1) {
-//     rvspForm.style.display = "flex";
-//     codeForm.style.display = "none";
-//     rehearsalField.required = false;  // Make it not required
-//   } else if (code.value == 2) {
-//     rvspForm.style.display = "flex";
-//     codeForm.style.display = "none";
-//     rehearsal.style.display = "flex";
-//   } else {
-//     warning.style.visibility = "visible";
-//   }
-// };
 
 document.getElementById("mainLink").href = "main.html?code=" + code +"#main";
 document.getElementById("dateLink").href = "main.html?code=" + code +"#date";
