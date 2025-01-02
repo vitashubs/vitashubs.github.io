@@ -1,0 +1,288 @@
+{
+    "list": [
+        {
+            "guests": ["Constance Dimarco", "Henry Dimarco"],
+            "alternates": ["Connie Dimarco", "Hank Dimarco"]
+        },
+        {
+            "guests": ["Kathryn Kirsch", "Kris Kirsch", "Cooper Kirsch", "Quinn Kirsch"],
+            "alternates": ["Katie Kirsch", "", "", ""]
+        },
+        {
+            "guests": ["Igor Shubin, Tatiana Shubin, Dani Shubin, Neta Shubin"],
+            "alternates": ["", "Tanya Shubin", "Daniel Shubin", ""]
+        },
+        {
+            "guests": ["Yotam Daniel", "Maria Daniel"],
+            "alternates": ["", "Masha Daniel"]
+        },
+        {
+            "guests": ["Peggy Stephens", "Kenny Stephens"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Shari Dimarco", "David Dimarco"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Alexa Dimarco"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Erika Dimarco"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Jaimee Arnoff", "Brian Arnoff"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Sonya Solovejtchik", "Eugenya Solovejtchik"],
+            "alternates": ["Sonia Solovejtchik", "Eugenia Solovejtchik"]
+        },
+        {
+            "guests": ["Vivian Cao", "Rob Levin"],
+            "alternates": ["Viv Cao", ""]
+        },
+        {
+            "guests": ["Kelly Espinoza"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Haley Scarano", "Matt Scarano"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Alex Stelea", "Namrata Kolla"],
+            "alternates": ["", "Nam Kolla"]
+        },
+        {
+            "guests": ["Viviana Yee", "Alejandro Sauter"],
+            "alternates": ["Viv Yee", "Ale Sauter"]
+        },
+        {
+            "guests": ["Jessica Kwak", "Zach Oropesa"],
+            "alternates": ["Jess Kwak", ""]
+        },
+        {
+            "guests": ["Edrienne Co"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Willa Zhao", "Mitch Miyashita"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Chris Demaio"],
+            "alternates": ["CJ Demaio"]
+        },
+        {
+            "guests": ["Connor Seidler", "Alyssa Kennedy"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Stephen Rockafellow", "Denise Prieto"],
+            "alternates": ["Steve Rockafellow", ""]
+        },
+        {
+            "guests": ["Andrew Sisung", "Hope Hobgood"],
+            "alternates": ["Andy Sisung", ""]
+        },
+        {
+            "guests": ["Max Ostachowsky"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Kyle Crandall", "Lizzy Jacks"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Amalia Safer", "Noah Safer"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Kyle Mann"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Orpheus Peng"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Rebecca Palma", "Kyle Swee"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Martine Subey", "Ken Wright"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Sara Daly", "Tom Belden"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Conor Cunningham", "Ellina Cunningham"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Ryan Corcoran", "Elizabeth Corcoran"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Gabrielle Mangini"],
+            "alternates": ["Gabi Mangini"]
+        },
+        {
+            "guests": ["Vinnie Magro", "Jamie Pitter"],
+            "alternates": ["Vincent Magro"]
+        },
+        {
+            "guests": ["Joyce Yan"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Michelle Fuentes"],
+            "alternates": ["Michi Fuentes"]
+        },
+        {
+            "guests": ["Makenzie Jordan"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Shelly Willard"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Nimisha Patil"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Anay Nawathe"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Sofia Karionova", "Keith Pallo"],
+            "alternates": ["Sofia Pallo", ""]
+        },
+        {
+            "guests": ["Miguel Chapa"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Paige Stoermer", "Steven Stoermer"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Anton Manzano"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Max Elisman", "Ami Elisman"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["James Moak"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Vivek Srinivasan", "Ronnie Gishi"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Emilio Mendoza", "Carmella Cabanero"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Bhavya Garg", "Nitika Sood"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Valerie Nguyen", "Justin Brauer"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Jon Buckley"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Chuck Onwuzuruike", "Sharice Gilbert"],
+            "alternates": ["Chukwuemeka Onwuzuruike", ""]
+        },
+        {
+            "guests": ["Tyler Askew", "Lauren Askew"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Archana Mandava"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Maya Mosyak"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Leonid Lakhovsky"],
+            "alternates": ["Lenya Lakhovsky"]
+        },
+        {
+            "guests": ["Mihal Lakhovsky", "Daniel Rossovsky"],
+            "alternates": ["Mihal Rossovsky", ""]
+        },
+        {
+            "guests": ["Marinachka Prezhdo", "Oleg Prezhdo"],
+            "alternates": ["Marina Prezhdo", ""]
+        },
+        {
+            "guests": ["George Vorobiov", "Maria Vorobiov"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["James Xiao", "Alexis Ordona"],
+            "alternates": ["", "Alexis Xiao"]
+        },
+        {
+            "guests": ["Emmanuel Forbes"],
+            "alternates": ["Manny Forbes"]
+        },
+        {
+            "guests": ["Nick Silverthorn"],
+            "alternates": ["Nicholas Silverthorn"]
+        },
+        {
+            "guests": ["Charlene Flournoy"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Emily Isaacman"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Emily Kimball", "Tyler Morgan"],
+            "alternates": ["", ""]
+        },
+        {
+            "guests": ["Ryan Kao"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Rachel Forbes"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Greyson Tracey"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Hannah Stalker"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Laura Buel"],
+            "alternates": [""]
+        },
+        {
+            "guests": ["Allie Russell"],
+            "alternates": [""]
+        }
+    ]
+}
