@@ -54,7 +54,7 @@
                 <p>First Name:</p>
             </div>
             <div class="col-md-6">
-                <input name="firstName" type="text" placeholder="First Name" required>
+                <input id="firstNameInput" name="firstName" type="text" placeholder="First Name" required>
             </div>
         </div>
         <div class="row" id="lastName">
@@ -62,7 +62,7 @@
                 <p>Last Name:</p>
             </div>
             <div class="col-md-6">
-                <input name="lastName" type="text" placeholder="Last Name" required>
+                <input id="lastNameInput" name="lastName" type="text" placeholder="Last Name" required>
             </div>
         </div>
         <div class="row" id="rehearsal" style="display: none;">
@@ -114,7 +114,6 @@
                     <button type="button" onclick="setValueShuttle('No')" id="noButtonShuttle">No</button>
                 </div>
                 <input type="hidden" name="shuttleBus" id="shuttleField" value="" required>
-                <!-- <input name="shuttleBus" type="text" placeholder="Yes/No" required> -->
             </div>
         </div>
         <div class="row" id="guest" style="display: none;">

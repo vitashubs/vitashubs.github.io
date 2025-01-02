@@ -1,3 +1,17 @@
+// Guest verification
+let guestList = {};
+
+fetch('http://github.com/vitashubs/vitashubs.github.io/blob/main/guest_list.json')
+  .then(res => res.json())
+  .then(json => {
+    guestList = json;
+    console.log('vs vs vs');
+    console.log(guestList);
+  })
+const firstName = document.getElementById("firstNameInput");
+const lastName = document.getElementById("lastNameInput");
+
+
 let code = (document.URL.split('?')[1]).split("=")[1].split("#")[0];
 
 // Get the hamburger and menu elements
@@ -177,21 +191,3 @@ function setValueShuttle(value) {
       noButton.style.color = "white";
     }
 }
-
-// function setValueGuest(value) {
-//   document.getElementById('guestField').value = value;
-//   yesButton = document.getElementById("yesGuest")
-//   noButton = document.getElementById("noGuest")
-//     // Change background color of selected button
-//     if (value === 'Yes') {
-//       yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes
-//       noButton.style.backgroundColor = '#f9f9f9'
-//       noButton.style.color = "black";
-//       yesButton.style.color = "white";
-//     } else {
-//       noButton.style.backgroundColor = '#b77e1c'; // Change color for No
-//       yesButton.style.backgroundColor = '#f9f9f9'
-//       yesButton.style.color = "black";
-//       noButton.style.color = "white";
-//     }
-// }
