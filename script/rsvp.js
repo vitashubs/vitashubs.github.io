@@ -1,7 +1,7 @@
 // Guest verification
 let guestList = {};
 
-fetch('httpsgithub.com/vitashubs/vitashubs.github.io/blob/main/guest_list.json')
+fetch('http://github.com/vitashubs/vitashubs.github.io/blob/main/guest_list.json')
   .then(res => res.json())
   .then(json => {
     guestList = json;
