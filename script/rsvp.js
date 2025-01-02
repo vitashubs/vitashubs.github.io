@@ -1,13 +1,14 @@
 // Guest verification
 let guestList = {};
 
-fetch('https://github.com/vitashubs/vitashubs.github.io/blob/main/guest_list.json')
+fetch('https://www.july10.us/guest_list.json')
   .then(res => res.json())
   .then(json => {
     guestList = json;
     console.log('vs vs vs');
     console.log(guestList);
   })
+
 const firstName = document.getElementById("firstNameInput");
 const lastName = document.getElementById("lastNameInput");
 
