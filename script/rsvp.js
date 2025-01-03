@@ -1,5 +1,7 @@
 // Guest verification
 let guestList = {};
+let guestObj = null;
+let guestObj_Index = -1;
 
 fetch('https://www.july10.us/guest_list.json')
   .then(res => res.json())
@@ -11,6 +13,63 @@ fetch('https://www.july10.us/guest_list.json')
 
 const firstName = document.getElementById("firstNameInput");
 const lastName = document.getElementById("lastNameInput");
+const nextBtn = document.getElementById("rsvp-next");
+const rsvpMessage = document.getElementById("rsvp-name-message");
+const questions = document.getElementById("questions");
+
+const checkName = function() {
+  let guestName = firstName.value.trim() + " " + lastName.value.trim(); 
+  for (let i = 0; i < guestList.list.length; i++) {
+    for (let j = 0; j < guestList.list[i].guests.length; j++) {
+      if (guestName.toLowerCase() == guestList.list[i].guests[j].toLowerCase()) {
+        guestObj = guestList.list[i];
+        guestObj_Index = j;
+        break;
+      }
+    }
+    for (let k = 0; k < guestList.list[i].alternates.length; k++) {
+      if (guestName.toLowerCase() == guestList.list[i].alternates[k].toLowerCase()) {
+        guestObj = guestList.list[i];
+        guestObj_Index = k;
+        break;
+      }
+    }
+    if (guestObj != null) { break; }
+  }
+
+  if (guestObj == null) {
+    rsvpMessage.style = "visibility: visible; color:red;";
+  } else {
+    nextBtn.style = "display:none";
+    rsvpMessage.style = "display:none"
+    firstName.readOnly = true;
+    lastName.readOnly = true;
+    questions.style = "visibility:visible;max-height:5000px";
+
+    if (guestObj.guests.length > 1) {
+      document.getElementById("relatedGuests").style = "display:flex;"
+      relatedNames = document.getElementById("relatedGuests-Names");
+      guestStr = [guestObj.guests.slice(0, -1).join(', '), guestObj.guests.slice(-1)[0]].join(guestObj.guests.length < 2 ? '' : ' and ');
+      relatedNames.innerText = "Looks like your party consists of " + guestStr;
+    }
+  }
+}
+
+nextBtn.addEventListener('click', checkName);
+lastName.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    event.preventDefault();
+    checkName();
+  }
+});
+firstName.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    event.preventDefault();
+    checkName();
+  }
+});
 
 
 let code = (document.URL.split('?')[1]).split("=")[1].split("#")[0];
@@ -72,8 +131,6 @@ else {
   rehearsalField.required = false;  // Make it not required
 }
 
-// 
-
 document.getElementById('customForm').addEventListener('submit', function(event) {
   event.preventDefault();  // Prevent the form from submitting immediately
 
@@ -85,6 +142,28 @@ document.getElementById('customForm').addEventListener('submit', function(event)
   // Create a new FormData object from the form
   var formData = new FormData(this);
 
+  var hasError = false;
+  if (guest != null && guestObj_Index != -1 && document.getElementById("partyField").value == "Yes") {
+    // make another form data
+    for (let i = 0; i < guestObj.guests.length; i++) {
+      if (i == guestObj_Index) {
+        continue;
+      }
+      let formData2 = new FormData(this);
+      let name = guestObj.guests[i].split(" ");
+      formData2.set('firstName', name[0]);
+      formData2.set('lastName', name[1]);
+      fetch(this.action, {
+        method: 'POST',
+        body: formData2
+      }).then(response => {
+        if (!response.ok) {
+          hasError = true;
+        }
+      });
+    }
+  }
+
   // Submit the form data using fetch (asynchronous)
   fetch(this.action, {
       method: 'POST',
@@ -94,7 +173,7 @@ document.getElementById('customForm').addEventListener('submit', function(event)
       // Hide loading screen
       document.getElementById('loadingScreen').style.display = 'none';
 
-      if (response.ok) {
+      if (response.ok && !hasError) {
           // Redirect to a custom page after the form is successfully submitted
           window.location.href = 'success.html?code='+code;  // Replace with your custom page URL
       } else {
@@ -179,6 +258,24 @@ function setValueShuttle(value) {
   document.getElementById('shuttleField').value = value;
   yesButton = document.getElementById("yesButtonShuttle")
   noButton = document.getElementById("noButtonShuttle")
+    // Change background color of selected button
+    if (value === 'Yes') {
+      yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes
+      noButton.style.backgroundColor = '#f9f9f9'
+      noButton.style.color = "black";
+      yesButton.style.color = "white";
+    } else {
+      noButton.style.backgroundColor = '#b77e1c'; // Change color for No
+      yesButton.style.backgroundColor = '#f9f9f9'
+      yesButton.style.color = "black";
+      noButton.style.color = "white";
+    }
+}
+
+function setValueParty(value) {
+  document.getElementById('partyField').value = value;
+  yesButton = document.getElementById("yesButtonParty")
+  noButton = document.getElementById("noButtonParty")
     // Change background color of selected button
     if (value === 'Yes') {
       yesButton.style.backgroundColor = '#b77e1c'; // Change color for Yes

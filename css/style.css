@@ -619,7 +619,39 @@ form button:hover {
     border-radius: 10px;
 }
 
+#rsvp-next {
+    border-radius: 10px;
+    border-color: #b77e1c;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
 
+#rsvp-name-message {
+    margin: 10px;
+}
+
+.rsvp #questions {
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    max-height: 0; 
+    overflow: hidden;
+}
+
+#relatedGuests-Names {
+    justify-content: center;
+    font-style: italic;
+}
+
+.rsvp [readonly] {
+    border-bottom-color: rgba(118, 118, 118, 0.3);
+    cursor: default;
+    background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(59, 59, 59, 0.3));
+    color: light-dark(rgb(84, 84, 84), rgb(170, 170, 170));
+}
+.rsvp [readonly]:focus {
+    outline: none;
+}
 
 .options {
     display: flex;

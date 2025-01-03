@@ -42,9 +42,6 @@
 
         <div class="rsvpTitle">
             <h4>Vita & Mason RSVP!</h4>
-            <p style="font-weight: 700;">
-                Please fill out this form for every person addressed on your envelope.
-            </p>
             <p>
                 If you need to update your response at any point, please re-submit this form.
             </p>
@@ -65,95 +62,105 @@
                 <input id="lastNameInput" name="lastName" type="text" placeholder="Last Name" required>
             </div>
         </div>
-        <div class="row" id="rehearsal" style="display: none;">
-            <div class="col-md-6">
-                <p>Are you able to attend the rehearsal dinner (July 9th, 2025, Time TBD)?</p>
-            </div>
-            <div class="col-md-6">
-                <div class="options">
-                    <button type="button" onclick="setValueRF('Yes')" id="yesButtonRF">Yes</button>
-                    <button type="button" onclick="setValueRF('No')" id="noButtonRF">No</button>
+        <div id="rsvp-name-message" style="visibility:hidden;">
+            Sorry, we can't find an invitation with this name.
+        </div>
+        <button id="rsvp-next" type="button">Next</button>
+        <div id="questions">
+            <div class="row" id="rehearsal" style="display: none;">
+                <div class="col-md-6">
+                    <p>Are you able to attend the rehearsal dinner (July 9th, 2025, Time TBD)?</p>
                 </div>
-                <input type="hidden" name="rehearsal" id="rehearsalField" value="">
-                <!-- <input name="rehearsal" type="text" id="rehearsalField" placeholder="Yes/No" required> -->
-            </div>
-        </div>
-        <div class="row" id="ceremony">
-            <div class="col-md-6">
-                <p>Are you able to attend the ceremony (July 10th, 2025, 4:00 PM)?</p>
-            </div>
-            <div class="col-md-6">
-                <div class="options">
-                    <button type="button" onclick="setValueCeremony('Yes')" id="yesButtonCeremony">Yes</button>
-                    <button type="button" onclick="setValueCeremony('No')" id="noButtonCeremony">No</button>
+                <div class="col-md-6">
+                    <div class="options">
+                        <button type="button" onclick="setValueRF('Yes')" id="yesButtonRF">Yes</button>
+                        <button type="button" onclick="setValueRF('No')" id="noButtonRF">No</button>
+                    </div>
+                    <input type="hidden" name="rehearsal" id="rehearsalField" value="">
+                    <!-- <input name="rehearsal" type="text" id="rehearsalField" placeholder="Yes/No" required> -->
                 </div>
-                <input type="hidden" name="ceremony" id="ceremonyField" value="">
-                <!-- <input name="ceremony" type="text" placeholder="Yes/No" required> -->
             </div>
-        </div>
-        <div class="row" id="beachDay">
-            <div class="col-md-6">
-                <p>Are you able to attend the beach day (July 11th, 2025, All day)?</p>
-            </div>
-            <div class="col-md-6">
-                <div class="options">
-                    <button type="button" onclick="setValueBeach('Yes')" id="yesButtonBeach">Yes</button>
-                    <button type="button" onclick="setValueBeach('No')" id="noButtonBeach">No</button>
+            <div class="row" id="ceremony">
+                <div class="col-md-6">
+                    <p>Are you able to attend the ceremony (July 10th, 2025, 4:00 PM)?</p>
                 </div>
-                <input type="hidden" name="beachDay" id="beachField" value="">
-                <!-- <input name="beachDay" type="text" placeholder="Yes/No" required> -->
-            </div>
-        </div>
-        <div class="row" id="shuttleBus">
-            <div class="col-md-6">
-                <p>Will you want a seat in the shuttle to the venue from Pacific Beach, and back?</p>
-            </div>
-            <div class="col-md-6">
-                <div class="options">
-                    <button type="button" onclick="setValueShuttle('Yes')" id="yesButtonShuttle">Yes</button>
-                    <button type="button" onclick="setValueShuttle('No')" id="noButtonShuttle">No</button>
+                <div class="col-md-6">
+                    <div class="options">
+                        <button type="button" onclick="setValueCeremony('Yes')" id="yesButtonCeremony">Yes</button>
+                        <button type="button" onclick="setValueCeremony('No')" id="noButtonCeremony">No</button>
+                    </div>
+                    <input type="hidden" name="ceremony" id="ceremonyField" value="">
+                    <!-- <input name="ceremony" type="text" placeholder="Yes/No" required> -->
                 </div>
-                <input type="hidden" name="shuttleBus" id="shuttleField" value="" required>
             </div>
-        </div>
-        <div class="row" id="guest" style="display: none;">
-            <div class="col-md-6">
-                <p>Are you planning on bringing a +1? (Leave blank if no)</p>
-            </div>
-            <div class="col-md-6">
-                <div class="options">
-                    <input name="guest" type="text" id="guestField"  placeholder="Guest Full Name">
+            <div class="row" id="beachDay">
+                <div class="col-md-6">
+                    <p>Are you able to attend the beach day (July 11th, 2025, All day)?</p>
                 </div>
-                <!-- <input type="hidden" name="guest" id="guestField" value="" required> -->
-                <!-- <input name="shuttleBus" type="text" placeholder="Yes/No" required> -->
+                <div class="col-md-6">
+                    <div class="options">
+                        <button type="button" onclick="setValueBeach('Yes')" id="yesButtonBeach">Yes</button>
+                        <button type="button" onclick="setValueBeach('No')" id="noButtonBeach">No</button>
+                    </div>
+                    <input type="hidden" name="beachDay" id="beachField" value="">
+                    <!-- <input name="beachDay" type="text" placeholder="Yes/No" required> -->
+                </div>
             </div>
-        </div>
-        <div class="row" id="food">
-            <div class="col-md-6">
-                <p>Food allergies or preferences? Write "n/a" if none</p>
+            <div class="row" id="shuttleBus">
+                <div class="col-md-6">
+                    <p>Will you want a seat in the shuttle to the venue from Pacific Beach, and back?</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="options">
+                        <button type="button" onclick="setValueShuttle('Yes')" id="yesButtonShuttle">Yes</button>
+                        <button type="button" onclick="setValueShuttle('No')" id="noButtonShuttle">No</button>
+                    </div>
+                    <input type="hidden" name="shuttleBus" id="shuttleField" value="" required>
+                </div>
             </div>
-            <div class="col-md-6">
-                <input name="foodAllergies" type="text" placeholder="Allergies" required>
+            <div class="row" id="guest" style="display: none;">
+                <div class="col-md-6">
+                    <p>Are you planning on bringing a +1? (Leave blank if no)</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="options">
+                        <input name="guest" type="text" id="guestField"  placeholder="Guest Full Name">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row" id="notes">
-            <div class="col-md-6">
-                <p>Is there anything you would like to add?</p>
+            <div class="row" id="relatedGuests-Names">
             </div>
-            <div class="col-md-6">
-                <input name="additionalNotes" type="text" placeholder="Additional Notes">
+            <div class="row" id="relatedGuests" style="display: none;">
+                <div class="col-md-6">
+                    <p>Same RSVP for everyone in your party? If no, submit a new form for the others in your party.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="options">
+                        <button type="button" onclick="setValueParty('Yes')" id="yesButtonParty">Yes</button>
+                        <button type="button" onclick="setValueParty('No')" id="noButtonParty">No</button>
+                    </div>
+                    <input type="hidden" name="party" id="partyField" value="" required>
+                </div>
             </div>
-        </div>
-        <!-- <input name="ceremony" type="text" placeholder="Ceremony" required>
-        <input name="reception" type="text" placeholder="Reception" required>
-        <input name="afterParty" type="text" placeholder="Yes/No" required>
-        <input name="beachDay" type="text" placeholder="Yes/No" required>
-        <input name="shuttleBus" type="text" placeholder="Yes/No" required>
-        <input name="registry" type="text" placeholder="Yes/No" required>
-        <input name="hotel" type="text" placeholder="Where are you planning on staying?" required>
-        <input name="additionalNotes" type="text" placeholder="Additional Notes" required> -->
-
-        <button type="submit" class="submit-button">Send</button>
+            <div class="row" id="food">
+                <div class="col-md-6">
+                    <p>Food allergies? Write "n/a" if none</p>
+                </div>
+                <div class="col-md-6">
+                    <input name="foodAllergies" type="text" placeholder="Allergies" required>
+                </div>
+            </div>
+            <div class="row" id="notes">
+                <div class="col-md-6">
+                    <p>Is there anything you would like to add?</p>
+                </div>
+                <div class="col-md-6">
+                    <input name="additionalNotes" type="text" placeholder="Additional Notes">
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Send</button>
+        </div> <!-- end questions -->
     </form>
     </div>
 
