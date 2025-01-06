@@ -941,4 +941,29 @@ form button:hover {
     .arrows {
         display: none;
     }
+
+    .tidbits {
+        padding: 0px;
+        width: 100lvw;
+    }
+
+    .tidbits h4 {
+        padding-top: 30px;
+    }
+
+    .tidbit-text {
+        padding: 15px 30px;
+    }
+
+    .tidbits .image {
+        padding: 0px;
+    }
+
+    .tidbits .height {
+        height: 0px;
+    }
+
+    #tidbit-first-title {
+        padding-top: 0px;
+    }
 }
