@@ -287,6 +287,11 @@
         {
             "guests": ["Susie Fritzechurch", "Matt Fritzechurch"],
             "alternates": ["", ""]
+        },
+        {
+            "guests": ["Oleg Finkelstein"],
+            "alternates": [""]
         }
+        
     ]
 }
